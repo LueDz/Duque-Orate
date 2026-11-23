@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duque Orate Tech | Periféricos para oficina y home office en Buenos Aires</title>
+  <meta name="description" content="Tecnología de calidad para tu casa, tu estudio o tu oficina en Buenos Aires. Teclados, mouses, impresoras y más, con asesoramiento cercano y atención todos los días por WhatsApp.">
+  <meta name="theme-color" content="#1F5C45">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!-- Reemplazá TU-DOMINIO por tu dirección real cuando publiques -->
+  <link rel="canonical" href="https://TU-DOMINIO.com.ar/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Duque Orate">
+  <!-- ===== TEXTO QUE SE VE AL COMPARTIR EL LINK (WhatsApp, Instagram, Google): editá estas 3 líneas ===== -->
+  <meta property="og:title" content="Duque Orate Tech | Periféricos para oficina y home office en Buenos Aires">
+  <meta property="og:description" content="Tecnología de calidad, elegida para lo que necesitás. Te asesoramos por WhatsApp.">
+  <meta property="og:url" content="https://TU-DOMINIO.com.ar/">
+  <!-- Cuando tengas el logo: <meta property="og:image" content="https://TU-DOMINIO.com.ar/og.png"> -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Duque Orate",
+    "description": "Tecnología y periféricos para casa, estudio y oficina en San Miguel, Buenos Aires.",
+    "url": "https://TU-DOMINIO.com.ar/",
+    "telephone": "+5491178142528",
+    "areaServed": { "@type": "AdministrativeArea", "name": "Buenos Aires, Argentina" }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Manrope:wght@500;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="promo" id="promo" hidden></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Duque Orate tech, ir al inicio"><img class="crown" src="img/corona.png" alt="" aria-hidden="true"><span class="lockup"><span class="wordmark">Duque Orate</span><span class="tech">tech<span class="cursor" aria-hidden="true"></span></span></span></a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav id="nav" class="nav" aria-label="Principal">
+      <a href="#productos">Productos</a>
+      <a href="#kits">Kits</a>
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto" class="btn btn-small">Contactanos</a>
+    </nav>
+    <button class="cart-btn" id="cart-btn" aria-expanded="false" aria-controls="cart">Carrito (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <h1>Tecnología de calidad, elegida para lo que necesitás.</h1>
+        <p>Teclados, mouses, impresoras, pendrives y más, para tu casa, tu estudio o tu oficina. Te asesoramos de cerca para que compres lo justo: ni más, ni menos.</p>
+        <div class="actions"><a class="btn btn-crema" href="#productos">Ver productos</a><a class="btn btn-ghost" href="#contacto">Te asesoramos</a></div>
+        <ul class="cats" id="hero-cats" aria-label="Categorías"></ul>
+      </div>
+      <figure class="hero-media" id="hero-media">
+        <img src="img/productos/KIT_LOGITECH_1.webp" alt="Combo de teclado y mouse inalámbrico Logitech" width="800" height="800">
+        <figcaption><span class="mono">Destacado</span> Combo teclado + mouse inalámbrico Logitech</figcaption>
+      </figure>
+    </section>
+
+    <section id="productos" class="section">
+      <h2>Periféricos para tu día a día</h2>
+      <p class="lead">Una selección corta de productos que recomendamos. Filtrá por categoría.</p>
+      <div class="filters" role="group" aria-label="Filtrar productos" id="filters"></div>
+      <div class="grid" id="product-grid"></div>
+      <button type="button" class="btn ver-mas" id="product-ver-mas" hidden>Ver más productos</button>
+    </section>
+
+    <section id="kits" class="section section-alt">
+      <h2>Kits listos para usar</h2>
+      <p class="lead">Combinaciones armadas para trabajar, estudiar o lo que necesites, sin perder tiempo eligiendo. Si buscás otra, te la armamos.</p>
+      <div class="grid" id="kit-grid"></div>
+      <button type="button" class="btn btn-crema ver-mas" id="kit-ver-mas" hidden>Ver más kits</button>
+    </section>
+
+    <section id="nosotros" class="section">
+      <div class="about">
+        <div>
+          <h2>Quiénes somos</h2>
+          <p>Duque Orate nace en San Miguel con una idea simple: que equiparte con tecnología sea fácil. Para armar tu puesto de trabajo sin vueltas, tu rincón de estudio o el escritorio de casa donde jugás y disfrutás.</p>
+          <p>Elegimos pocos productos, de marcas que conocemos, y te orientamos según lo que necesitás. Si algo no te conviene, te lo vamos a decir.</p>
+          <p class="firma">El nombre es medio loco. La forma de trabajar, no.</p>
+        </div>
+        <ul class="pilares">
+          <li><span class="mono">01</span><strong>Calidad que conocemos</strong>Marcas reconocidas y productos nuevos, en su empaque original.</li>
+          <li><span class="mono">02</span><strong>Atención cercana</strong>Hablás directo con nosotros por WhatsApp, todos los días.</li>
+          <li><span class="mono">03</span><strong>Te orientamos</strong>Contanos para qué lo querés y te recomendamos lo justo. Para empresas, cotizamos por cantidad.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="preguntas" class="section section-soft">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq">
+        <details open>
+          <summary>¿Cómo hago un pedido?</summary>
+          <p>Agregá los productos al carrito y tocá "Enviar pedido por WhatsApp". Recibimos el detalle completo y te confirmamos stock y precio final. Después coordinamos juntos el pago y la entrega.</p>
+        </details>
+        <details>
+          <summary>No sé qué me conviene, ¿me ayudan a elegir?</summary>
+          <p>Sí, para eso estamos. Contanos para qué lo vas a usar y cuánto querés gastar, y te recomendamos la mejor opción.</p>
+        </details>
+        <details>
+          <summary>¿Dónde están y hacen envíos?</summary>
+          <p>Estamos en San Miguel, Buenos Aires. Podés retirar sin costo o te lo enviamos:</p>
+          <table class="zonas">
+            <caption class="sr">Zonas de entrega y costos</caption>
+            <thead><tr><th scope="col">Zona</th><th scope="col">Costo</th></tr></thead>
+            <tbody id="zonas-body"></tbody>
+          </table>
+        </details>
+        <details>
+          <summary>¿Cuánto tarda la entrega?</summary>
+          <p>Depende de la zona y del producto. Al confirmar el pedido te decimos el día de entrega o despacho.</p>
+        </details>
+        <details>
+          <summary>¿Cómo puedo pagar?</summary>
+          <p>Por transferencia bancaria, o en efectivo si retirás en persona.</p>
+        </details>
+        <details>
+          <summary>¿Los productos son nuevos?</summary>
+          <p>Sí. Todos nuestros productos son nuevos y vienen en su empaque original.</p>
+        </details>
+        <details>
+          <summary>¿Tienen garantía?</summary>
+          <p>Ante un desperfecto de fábrica, te acompañamos con el cambio o la gestión con el fabricante. Las condiciones se evalúan según cada caso.</p>
+        </details>
+        <details>
+          <summary>Soy una empresa, ¿tienen precio por cantidad?</summary>
+          <p>Sí. Contanos cuántos puestos querés equipar y te armamos una cotización a medida.</p>
+        </details>
+        <details>
+          <summary>¿En qué horario atienden?</summary>
+          <p>Atendemos por WhatsApp todos los días.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contanos qué buscás</h2>
+      <p class="lead">Te asesoramos por WhatsApp, sea para vos, tu estudio o tu empresa.</p>
+      <form id="contact-form" class="form" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+            <p class="error" id="err-nombre" role="alert"></p>
+          </div>
+          <div>
+            <label for="empresa">Empresa (opcional)</label>
+            <input id="empresa" name="empresa" type="text" autocomplete="organization">
+          </div>
+        </div>
+        <label for="uso">¿Para qué lo necesitás?</label>
+        <select id="uso" name="uso">
+          <option>Uso personal o en casa</option>
+          <option>Estudio</option>
+          <option>Empresa (2 a 5 puestos)</option>
+          <option>Empresa (6 puestos o más)</option>
+        </select>
+        <label for="mensaje">¿Qué necesitás?</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Ej: busco un mouse inalámbrico silencioso para trabajar en casa"></textarea>
+        <p class="error" id="err-mensaje" role="alert"></p>
+        <button class="btn" type="submit">Enviar por WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p class="foot-brand">Duque Orate <span class="mono">tech</span></p>
+      <p>San Miguel, Buenos Aires</p>
+    </div>
+    <div>
+      <p><a href="https://wa.me/5491178142528" rel="noopener">WhatsApp 11 7814-2528</a></p>
+      <p>Atención todos los días</p>
+    </div>
+    <div>
+      <p><a href="https://instagram.com/duqueorate" rel="noopener">Instagram @duqueorate</a></p>
+      <p>© <span id="year"></span> Duque Orate</p>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart" id="cart" aria-labelledby="cart-title" hidden>
+    <div class="cart-head">
+      <h2 id="cart-title">Tu carrito</h2>
+      <button type="button" class="cart-close" id="cart-close" aria-label="Cerrar carrito">Cerrar</button>
+    </div>
+    <ul class="cart-items" id="cart-items"></ul>
+    <p class="cart-empty" id="cart-empty">Tu carrito está vacío.</p>
+    <p class="cart-envio" id="cart-envio"></p>
+    <p class="cart-total" id="cart-total"></p>
+    <label for="cart-nombre">Tu nombre</label>
+    <input id="cart-nombre" type="text" autocomplete="name">
+    <label for="cart-zona">Entrega</label>
+    <select id="cart-zona"></select>
+    <label for="cart-pago">Medio de pago</label>
+    <select id="cart-pago">
+      <option>Transferencia</option>
+      <option>Efectivo (al retirar)</option>
+    </select>
+    <label for="cart-nota">Notas (opcional)</label>
+    <textarea id="cart-nota" rows="2" placeholder="Ej: entrega en Bella Vista por la tarde"></textarea>
+    <p class="error" id="cart-error" role="alert"></p>
+    <button type="button" class="btn" id="cart-send">Enviar pedido por WhatsApp</button>
+    <button type="button" class="link-btn" id="cart-clear">Vaciar carrito</button>
+  </aside>
+
+  <button type="button" class="wa-float" id="wa-float" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 11.2c.4 1.8 2.3 3.6 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>WhatsApp</span></button>
+
+  <script src="js/catalogo.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
