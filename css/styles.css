@@ -202,5 +202,8 @@ h3{font-size:1rem}
 /* ===== Botón flotante de WhatsApp: el pop-up de contacto siempre a mano ===== */
 .wa-float{position:fixed;right:20px;bottom:20px;z-index:25;display:flex;align-items:center;gap:9px;background:var(--bordo);color:var(--hueso);border:none;border-radius:999px;padding:13px 20px 13px 16px;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;box-shadow:0 8px 20px rgba(20,32,26,.28);transition:background .15s,transform .15s}
 .wa-float:hover{background:var(--bordo-oscuro);transform:translateY(-1px)}
-.wa-float svg{width:22px;height:22px;flex:none}
-@media (max-width:520px){.wa-float span{display:none}.wa-float{padding:14px;border-radius:50%}}
+.wa-float svg{fill:#fff;flex:none;display:block}
+.wa-float .wa-full{height:24px;width:auto}
+.wa-float .wa-icon{display:none;width:26px;height:26px}
+.wa-float{padding:14px 22px}
+@media (max-width:520px){.wa-float .wa-full{display:none}.wa-float .wa-icon{display:block}.wa-float{padding:15px;border-radius:50%}}
