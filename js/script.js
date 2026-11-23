@@ -461,6 +461,37 @@ function iniciarTituloPestana() {
   });
 }
 
+// ---------- Destacado de la portada: uno al azar en cada visita ----------
+function iniciarDestacado() {
+  const fig = $("#hero-media");
+  if (!fig) return;
+  const todos = [...PRODUCTS, ...KITS].filter((x) => fotosDe(x).length);
+  let opciones = todos.filter((x) => x.portada);
+  if (!opciones.length) opciones = todos.filter((x) => x.destacado);
+  if (!opciones.length) return;
+  const item = opciones[Math.floor(Math.random() * opciones.length)];
+
+  const cap = document.createElement("figcaption");
+  const etiqueta = document.createElement("span");
+  etiqueta.className = "mono";
+  etiqueta.textContent = "Destacado";
+  const nombre = document.createElement("span");
+  nombre.className = "hero-nombre";
+  nombre.textContent = item.nombre;
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "btn btn-small";
+  btn.textContent = "Agregar al carrito";
+  btn.addEventListener("click", () => {
+    cambiarCantidad(item.id, 1);
+    btn.textContent = "Agregado";
+    setTimeout(() => (btn.textContent = "Agregar al carrito"), 1200);
+  });
+  cap.append(etiqueta, nombre, btn);
+  fig.replaceChildren(crearMedia(item), cap);
+  fig.hidden = false;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   carrito = cargarCarrito();
   const promo = $("#promo");
@@ -488,6 +519,7 @@ document.addEventListener("DOMContentLoaded", () => {
   iniciarCarrito();
   iniciarWhatsappFloat();
   iniciarTituloPestana();
+  iniciarDestacado();
   iniciarCatsHero();
   iniciarVerMas();
 });

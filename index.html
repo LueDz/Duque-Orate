@@ -3,27 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Duque Orate Tech | Periféricos para oficina y home office en Buenos Aires</title>
+  <title>Duque Orate Tech | Tecnología para tu casa, estudio y oficina</title>
   <meta name="description" content="Tecnología de calidad para tu casa, tu estudio o tu oficina en Buenos Aires. Teclados, mouses, impresoras y más, con asesoramiento cercano y atención todos los días por WhatsApp.">
   <meta name="theme-color" content="#1F5C45">
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <!-- Reemplazá TU-DOMINIO por tu dirección real cuando publiques -->
-  <link rel="canonical" href="https://TU-DOMINIO.com.ar/">
+  <!-- Si más adelante tenés dominio propio, reemplazá luedz.github.io/Duque-Orate en las líneas que lo usan -->
+  <link rel="canonical" href="https://luedz.github.io/Duque-Orate/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
   <meta property="og:site_name" content="Duque Orate">
   <!-- ===== TEXTO QUE SE VE AL COMPARTIR EL LINK (WhatsApp, Instagram, Google): editá estas 3 líneas ===== -->
-  <meta property="og:title" content="Duque Orate Tech | Periféricos para oficina y home office en Buenos Aires">
+  <meta property="og:title" content="Duque Orate Tech | Tecnología para tu casa, estudio y oficina">
   <meta property="og:description" content="Tecnología de calidad, elegida para lo que necesitás. Te asesoramos por WhatsApp.">
-  <meta property="og:url" content="https://TU-DOMINIO.com.ar/">
-  <!-- Cuando tengas el logo: <meta property="og:image" content="https://TU-DOMINIO.com.ar/og.png"> -->
+  <meta property="og:url" content="https://luedz.github.io/Duque-Orate/">
+  <meta property="og:image" content="https://luedz.github.io/Duque-Orate/img/compartir.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Store",
     "name": "Duque Orate",
     "description": "Tecnología y periféricos para casa, estudio y oficina en San Miguel, Buenos Aires.",
-    "url": "https://TU-DOMINIO.com.ar/",
+    "url": "https://luedz.github.io/Duque-Orate/",
     "telephone": "+5491178142528",
     "areaServed": { "@type": "AdministrativeArea", "name": "Buenos Aires, Argentina" }
   }
@@ -56,10 +59,8 @@
         <div class="actions"><a class="btn btn-crema" href="#productos">Ver productos</a><a class="btn btn-ghost" href="#contacto">Te asesoramos</a></div>
         <ul class="cats" id="hero-cats" aria-label="Categorías"></ul>
       </div>
-      <figure class="hero-media" id="hero-media">
-        <img src="img/productos/KIT_LOGITECH_1.webp" alt="Combo de teclado y mouse inalámbrico Logitech" width="800" height="800">
-        <figcaption><span class="mono">Destacado</span> Combo teclado + mouse inalámbrico Logitech</figcaption>
-      </figure>
+      <!-- El destacado se elige al azar entre los productos marcados "En portada" en la planilla -->
+      <figure class="hero-media" id="hero-media" hidden></figure>
     </section>
 
     <section id="productos" class="section">

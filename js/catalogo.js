@@ -11,6 +11,7 @@ const PRODUCTS = [
     ],
     "precio": null,
     "destacado": true,
+    "portada": true,
     "categorias": [
       "teclado",
       "mouse"
@@ -26,6 +27,7 @@ const PRODUCTS = [
     ],
     "precio": null,
     "destacado": false,
+    "portada": true,
     "categorias": [
       "impresoras"
     ]
@@ -42,6 +44,7 @@ const PRODUCTS = [
     ],
     "precio": null,
     "destacado": false,
+    "portada": false,
     "categorias": [
       "mouse"
     ]
@@ -56,6 +59,7 @@ const PRODUCTS = [
     ],
     "precio": null,
     "destacado": false,
+    "portada": false,
     "categorias": [
       "pendrive"
     ]
@@ -70,6 +74,7 @@ const KITS = [
     "fotos": [],
     "precio": null,
     "destacado": true,
+    "portada": true,
     "componentes": [
       {
         "id": "DO-COM-001",
@@ -88,6 +93,7 @@ const KITS = [
     "fotos": [],
     "precio": null,
     "destacado": false,
+    "portada": false,
     "componentes": [
       {
         "id": "DO-MOU-001",

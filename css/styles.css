@@ -54,8 +54,10 @@ h3{font-size:1rem}
 /* ===== Hero: banda verde oscura, el ancla de marca al abrir la página ===== */
 .hero{background:var(--verde);padding:60px max(5vw,calc((100vw - var(--ancho))/2)) 56px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
 .hero-media{margin:0;background:var(--blanco);border-radius:20px;padding:24px 24px 16px;box-shadow:0 18px 40px rgba(10,30,22,.25)}
-.hero-media img{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;display:block}
-.hero-media figcaption{font-size:.88rem;color:var(--tinta);border-top:1px solid var(--linea);padding-top:12px;margin-top:8px;display:flex;gap:10px;align-items:baseline}
+.hero-media[hidden]{display:none}
+.hero-media .media{aspect-ratio:4/3;margin:0}
+.hero-media figcaption{font-size:.9rem;color:var(--tinta);border-top:1px solid var(--linea);padding-top:12px;margin-top:8px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.hero-media .hero-nombre{font-weight:700;flex:1;min-width:12ch}
 .mono{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.78em;letter-spacing:.04em;color:var(--bordo);text-transform:uppercase}
 .hero p{font-size:1.1rem;max-width:56ch;margin:0 0 28px;color:rgba(242,235,221,.88)}
 .actions{display:flex;gap:12px;flex-wrap:wrap}
