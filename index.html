@@ -35,12 +35,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Manrope:wght@500;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
   <!-- El ?v= obliga al navegador a bajar la versión nueva de cada archivo después de una actualización -->
-  <link rel="stylesheet" href="css/styles.css?v=202611232002">
+  <link rel="stylesheet" href="css/styles.css?v=202611232030">
 </head>
 <body>
   <div class="promo" id="promo" hidden></div>
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Duque Orate tech, ir al inicio"><img class="crown" src="img/corona.png" alt="" aria-hidden="true"><span class="lockup"><span class="wordmark">Duque Orate</span><span class="tech">tech<span class="cursor" aria-hidden="true"></span></span></span></a>
+    <a class="brand" href="#inicio" aria-label="Duque Orate tech, ir al inicio"><span class="lockup"><span class="nombre"><img class="crown" src="img/corona.png" alt="" aria-hidden="true"><span class="wordmark">Duque Orate</span></span><span class="tech">tech<span class="cursor" aria-hidden="true"></span></span></span></a>
     <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menú</button>
     <nav id="nav" class="nav" aria-label="Principal">
       <a href="#productos">Productos</a>
@@ -96,7 +96,11 @@
     </section>
 
     <section id="preguntas" class="section section-soft">
-      <h2>Preguntas frecuentes</h2>
+      <div class="dos-col">
+      <div class="col-intro">
+        <h2>Preguntas frecuentes</h2>
+        <p class="lead">Lo que más nos consultan. Si no encontrás tu respuesta, escribinos.</p>
+      </div>
       <div class="faq">
         <details open>
           <summary>¿Cómo hago un pedido?</summary>
@@ -136,15 +140,24 @@
           <p>Sí. Contanos cuántos puestos querés equipar y te armamos una cotización a medida.</p>
         </details>
         <details>
-          <summary>¿En qué horario atienden?</summary>
-          <p>Atendemos por WhatsApp todos los días.</p>
+          <summary>¿Cómo me comunico con ustedes?</summary>
+          <p>Por WhatsApp, todos los días. Tocá el botón de WhatsApp que está abajo a la derecha o escribinos al 11 7814-2528.</p>
         </details>
+      </div>
       </div>
     </section>
 
     <section id="contacto" class="section">
-      <h2>Contanos qué buscás</h2>
-      <p class="lead">Te asesoramos por WhatsApp, sea para vos, tu estudio o tu empresa.</p>
+      <div class="dos-col">
+      <div class="col-intro">
+        <h2>Contanos qué buscás</h2>
+        <p class="lead">Te asesoramos por WhatsApp, sea para vos, tu estudio o tu empresa.</p>
+        <ul class="contacto-datos">
+          <li>WhatsApp: <a href="https://wa.me/5491178142528" rel="noopener"><strong>11 7814-2528</strong></a></li>
+          <li>Instagram: <a href="https://instagram.com/duqueorate" rel="noopener"><strong>@duqueorate</strong></a></li>
+          <li>San Miguel, Buenos Aires</li>
+        </ul>
+      </div>
       <form id="contact-form" class="form" novalidate>
         <div class="form-row">
           <div>
@@ -169,20 +182,21 @@
         <p class="error" id="err-mensaje" role="alert"></p>
         <button class="btn" type="submit">Enviar por WhatsApp</button>
       </form>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div>
-      <p class="foot-brand">Duque Orate <span class="mono">tech</span></p>
+      <p class="foot-brand">Duque Orate <span class="foot-tech">tech</span></p>
       <p>San Miguel, Buenos Aires</p>
     </div>
     <div>
-      <p><a href="https://wa.me/5491178142528" rel="noopener">WhatsApp 11 7814-2528</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5491178142528" rel="noopener"><strong>11 7814-2528</strong></a></p>
       <p>Atención todos los días</p>
     </div>
     <div>
-      <p><a href="https://instagram.com/duqueorate" rel="noopener">Instagram @duqueorate</a></p>
+      <p>Instagram: <a href="https://instagram.com/duqueorate" rel="noopener"><strong>@duqueorate</strong></a></p>
       <p>© <span id="year"></span> Duque Orate</p>
     </div>
   </footer>
@@ -215,7 +229,7 @@
 
   <button type="button" class="wa-float" id="wa-float" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 11.2c.4 1.8 2.3 3.6 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>WhatsApp</span></button>
 
-  <script src="js/catalogo.js?v=202611232002"></script>
-  <script src="js/script.js?v=202611232002"></script>
+  <script src="js/catalogo.js?v=202611232030"></script>
+  <script src="js/script.js?v=202611232030"></script>
 </body>
 </html>

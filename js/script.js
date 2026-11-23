@@ -432,7 +432,7 @@ function iniciarWhatsappFloat() {
   const btn = $("#wa-float");
   if (!btn) return;
   btn.addEventListener("click", () => {
-    const texto = "Hola, quiero que me asesoren con un producto de Duque Orate.";
+    const texto = "¡Hola! Me interesa un producto de Duque Orate y tengo algunas consultas. ¿Me pasan más información?";
     window.open(waLink(texto), "_blank", "noopener");
   });
 }
